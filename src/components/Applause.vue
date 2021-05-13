@@ -1,18 +1,12 @@
 <template>
-    <div class="block" @click="applauseOnce">
+    <div class="block">
         click to applause
     </div>
-    <p> Applause Counter: {{ applause_counter }} </p>
 </template>
 
 <script>
 export default {
     props: ['applause_counter'],
-    methods: {
-        applauseOnce(){
-            applause_counter++
-        }
-    }
 }
 </script>
 

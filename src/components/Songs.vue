@@ -1,30 +1,31 @@
 <template>
   <div class="songs">
-      <div class="lilac" @click="triggerFavorite1" v-bind:style=" {'background-color': actual_color1} ">
+      <div class="song_sample" @click="triggerFavorite1" v-bind:style=" {'background-color': actual_color1} ">
+          <img :src="`../assets/LILAC.jpeg`" :alt="lilac_img">
           LILAC
       </div>
-      <div class="celebrity" @click="triggerFavorite2" v-bind:style=" {'background-color': actual_color2}">
+      <div class="song_sample" @click="triggerFavorite2" v-bind:style=" {'background-color': actual_color2}">
           Celebrity
       </div>
-      <div class="good_day" @click="triggerFavorite3" v-bind:style=" {'background-color': actual_color3}">
+      <div class="song_sample" @click="triggerFavorite3" v-bind:style=" {'background-color': actual_color3}">
           Good Day
       </div>
-      <div class="you_and_i" @click="triggerFavorite4" v-bind:style=" {'background-color': actual_color4}">
+      <div class="song_sample" @click="triggerFavorite4" v-bind:style=" {'background-color': actual_color4}">
           You And I
       </div>
-      <div class="bbibbi" @click="triggerFavorite5" v-bind:style=" {'background-color': actual_color5}">
+      <div class="song_sample" @click="triggerFavorite5" v-bind:style=" {'background-color': actual_color5}">
           BBIBBI
       </div>
-      <div class="palette" @click="triggerFavorite6" v-bind:style=" {'background-color': actual_color6}">
+      <div class="song_sample" @click="triggerFavorite6" v-bind:style=" {'background-color': actual_color6}">
           Palette
       </div>
-      <div class="eight" @click="triggerFavorite7" v-bind:style=" {'background-color': actual_color7}">
+      <div class="song_sample" @click="triggerFavorite7" v-bind:style=" {'background-color': actual_color7}">
           eight
       </div>
-      <div class="blueming" @click="triggerFavorite8" v-bind:style=" {'background-color': actual_color8}">
+      <div class="song_sample" @click="triggerFavorite8" v-bind:style=" {'background-color': actual_color8}">
           Blueming
       </div>
-      <div class="spring_love_cherryblossom" @click="triggerFavorite9" v-bind:style=" {'background-color': actual_color9}">
+      <div class="song_sample" @click="triggerFavorite9" v-bind:style=" {'background-color': actual_color9}">
           Not Spring, Love, or Cherryblossom
       </div>
   </div>
@@ -143,87 +144,7 @@ export default {
 </script>
 
 <style>
-    .lilac{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .celebrity{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .good_day{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .you_and_i{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .bbibbi{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .palette{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .eight{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .blueming{
-        font-size: 50px;
-        height: auto;
-        width: 600px;
-        border-radius: 20px;
-        color: white;
-        text-align: center;
-        padding: 40px 0;
-        margin: 40px auto;
-    }
-    .spring_love_cherryblossom{
+    .song_sample{
         font-size: 50px;
         height: auto;
         width: 600px;
