@@ -1,37 +1,55 @@
 <template>
   <div class="songs">
       <div class="song_sample" @click="triggerFavorite1" v-bind:style=" {'background-color': actual_color1} ">
-          <img :src="`../assets/LILAC.jpeg`" :alt="lilac_img">
+          <img :src="lilac" :alt="lilac_img">
           LILAC
       </div>
       <div class="song_sample" @click="triggerFavorite2" v-bind:style=" {'background-color': actual_color2}">
+          <img :src="celebrity" :alt="celebrity_img">
           Celebrity
       </div>
       <div class="song_sample" @click="triggerFavorite3" v-bind:style=" {'background-color': actual_color3}">
+          <img :src="good_day" :alt="good_day_img">
           Good Day
       </div>
       <div class="song_sample" @click="triggerFavorite4" v-bind:style=" {'background-color': actual_color4}">
+          <img :src="you_and_i" :alt="you_and_i_img">
           You And I
       </div>
       <div class="song_sample" @click="triggerFavorite5" v-bind:style=" {'background-color': actual_color5}">
+          <img :src="bbibbi" :alt="bbibbi_img">
           BBIBBI
       </div>
       <div class="song_sample" @click="triggerFavorite6" v-bind:style=" {'background-color': actual_color6}">
+          <img :src="palette" :alt="palette_img">
           Palette
       </div>
       <div class="song_sample" @click="triggerFavorite7" v-bind:style=" {'background-color': actual_color7}">
+          <img :src="eight" :alt="eight_img">
           eight
       </div>
       <div class="song_sample" @click="triggerFavorite8" v-bind:style=" {'background-color': actual_color8}">
+          <img :src="blueming" :alt="blueming_img">
           Blueming
       </div>
       <div class="song_sample" @click="triggerFavorite9" v-bind:style=" {'background-color': actual_color9}">
+          <img :src="nslcb" :alt="nslcb_img">
           Not Spring, Love, or Cherryblossom
       </div>
   </div>
 </template>
 
 <script>
+import lilac from '../assets/LILAC.jpeg'
+import celebrity from '../assets/Celebrity.jpg'
+import good_day from '../assets/Good_Day.png'
+import you_and_i from '../assets/You&I.jpg'
+import bbibbi from '../assets/bbibbi.jpg'
+import palette from '../assets/Palette.png'
+import eight from '../assets/eight.jpg'
+import blueming from '../assets/blueming.jpg'
+import nslcb from '../assets/nslcb.jpg'
+
 export default {
     data(){
         return{
@@ -54,6 +72,16 @@ export default {
             actual_color7: 'lightpink',
             actual_color8: 'lightpink',
             actual_color9: 'lightpink',
+
+            lilac,
+            celebrity,
+            good_day,
+            you_and_i,
+            bbibbi,
+            palette,
+            eight,
+            blueming,
+            nslcb
         }
     },
     methods: {
@@ -153,5 +181,12 @@ export default {
         text-align: center;
         padding: 40px 0;
         margin: 40px auto;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
